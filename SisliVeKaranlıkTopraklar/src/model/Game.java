@@ -12,5 +12,11 @@ public class Game {
         System.out.println("Macera Oyununa Hoşgeldiniz !");
         System.out.println("Lütfen bir isim giriniz: ");
         String playerName = input.nextLine();
+        Player player = new Player();
+        player.setName(playerName);
+        System.out.println("Sayın" + player.getName() + "Sisli ve Karanlık Diyara hoş geldiniz");
+
+        player.selectChar();
+
     }
 }

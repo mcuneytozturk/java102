@@ -58,9 +58,17 @@ public class Player {
         this.name = name;
     }
 
-    public void selectChar(){
+    public void selectChar() {
+        Char s = new Samurai();
+        Char k = new Knight();
+        Char a = new Archer();
+        Char[] charList = {s, k, a};
 
+        for (Char charA : charList) {
+            System.out.println("Karakter: " + charA.getName() + ": Hasar: " + charA.getDamage() + ", Can: " + charA.getHealth() + ", Değer: " + charA.getMoney());
+        }
     }
+
     @Override
     public String toString() {
         return "Player{" +

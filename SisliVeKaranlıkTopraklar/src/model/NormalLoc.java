@@ -1,0 +1,14 @@
+package model;
+
+public class NormalLoc extends Location{
+
+    public NormalLoc(Player player) {
+        super(player);
+    }
+
+    @Override
+    public boolean onLocation() {
+
+        return true;
+    }
+}

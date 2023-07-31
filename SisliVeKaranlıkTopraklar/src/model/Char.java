@@ -1,6 +1,7 @@
 package model;
 
 public class Char {
+    private int id;
     private String name;
     private int damage;
     private int health;
@@ -9,11 +10,20 @@ public class Char {
     public Char() {
     }
 
-    public Char(String name, int damage, int health, int money) {
+    public Char(int id, String name, int damage, int health, int money) {
+        this.id = id;
         this.name = name;
         this.damage = damage;
         this.health = health;
         this.money = money;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

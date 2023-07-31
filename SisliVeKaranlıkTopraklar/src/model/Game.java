@@ -11,12 +11,12 @@ public class Game {
     public void start(){
         System.out.println("Macera Oyununa Hoşgeldiniz !");
         System.out.println("Lütfen bir isim giriniz: ");
-        String playerName = input.nextLine();
+        String playerName = "geçici isim"; //input.nextLine();
         Player player = new Player();
         player.setName(playerName);
-        System.out.println("Sayın" + player.getName() + "Sisli ve Karanlık Diyara hoş geldiniz");
+        System.out.println("Merhabalaar " + player.getName() + ", bu Sisli ve Karanlık Diyara hoş geldiniz");
 
         player.selectChar();
-
+        player.selectLocation();
     }
 }

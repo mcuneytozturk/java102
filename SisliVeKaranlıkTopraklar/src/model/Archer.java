@@ -2,6 +2,6 @@ package model;
 
 public class Archer extends Char{
     public Archer() {
-        super("Archer", 7, 18,21);
+        super(2,"Archer", 7, 18,21);
     }
 }

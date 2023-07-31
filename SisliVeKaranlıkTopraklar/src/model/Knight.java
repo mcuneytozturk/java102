@@ -2,6 +2,6 @@ package model;
 
 public class Knight extends Char{
     public Knight() {
-        super("Knight", 8, 24, 50);
+        super(3, "Knight", 8, 24, 50);
     }
 }

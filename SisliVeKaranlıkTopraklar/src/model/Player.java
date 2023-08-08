@@ -11,16 +11,9 @@ public class Player {
     private String name;
     private String charName;
 
-    public Player() {
-    }
-
-    public Player(Inventory inventory, int health, int money, int damage, String name, String charName) {
-        this.inventory = inventory;
-        this.health = health;
-        this.money = money;
-        this.damage = damage;
+    public Player(String name) {
         this.name = name;
-        this.charName = charName;
+        this.inventory = new Inventory();
     }
 
     public Inventory getInventory() {
@@ -83,18 +76,11 @@ public class Player {
 
         int selectChar = input.nextInt();
 
-        switch (selectChar){
-            case 1:
-                this.initPlayer(new Samurai());
-                break;
-            case 2:
-                this.initPlayer(new Knight());
-                break;
-            case 3:
-                this.initPlayer(new Archer());
-                break;
-            default:
-                this.initPlayer(new Samurai());
+        switch (selectChar) {
+            case 1 -> this.initPlayer(new Samurai());
+            case 2 -> this.initPlayer(new Knight());
+            case 3 -> this.initPlayer(new Archer());
+            default -> this.initPlayer(new Samurai());
         }
 
         System.out.println("Karakter: " + this.toString());
@@ -107,30 +93,12 @@ public class Player {
         this.money = aChar.getMoney();
     }
 
-    public void selectLocation(){
-        Location location = null;
-        System.out.println("Lütfen gitmek istediğiniz bölgeyi seçiniz");
-        System.out.println("1. Güvenli Ev");
-        System.out.println("2. Mağaza");
-        int selectedLoc = input.nextInt();
-        switch (selectedLoc){
-            case 1:
-                location = new SafeHouse(this);
-                break;
-            case 2:
-                location= new ToolStore(this);
-                break;
-            default:
-                location = new SafeHouse(this);
-        }
-
-        location.onLocation();
-    }
     @Override
     public String toString() {
-        return "Karakter: " + this.getCharName() +
-                "  hasar: " + this.getDamage() +
-                " can: " + this.getHealth() +
-                " para: " + this.getMoney();
+        return "Karakter : " + this.getCharName() +
+                " Silah : " + this.inventory.getWeapon().getName() +
+                " Hasar : " + this.getDamage() +
+                " Can : " + this.getHealth() +
+                " Para : " + this.getMoney();
     }
 }

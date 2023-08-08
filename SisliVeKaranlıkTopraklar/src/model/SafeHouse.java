@@ -1,14 +1,13 @@
 package model;
 
-public class SafeHouse extends Location{
+public class SafeHouse extends NormalLoc{
     public SafeHouse(Player player) {
-        super(player);
-        this.setName("Güvenli Ev");
+        super(player, "Güvenli Ev");
     }
 
     @Override
     public boolean onLocation() {
         System.out.println("Güvenli evdesiniz \nCanınız yenilendi");
-        return false;
+        return true;
     }
 }

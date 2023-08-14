@@ -2,6 +2,7 @@ package com.patikadev.model;
 
 import com.patikadev.helper.DBConnector;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -73,7 +74,7 @@ public class User {
 
             Statement st = DBConnector.getInstance().createStatement();
             ResultSet rs = st.executeQuery(query);
-            while (rs.next()){
+            while (rs.next()) {
                 obj = new User();
                 obj.setId(rs.getInt("id"));
                 obj.setName(rs.getString("user_name"));
@@ -83,10 +84,24 @@ public class User {
 
                 userList.add(obj);
             }
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
         return userList;
+    }
+    public static boolean add(String name, String uname, String password, String type) {
+        String query = "INSERT INTO user_table (user_name, user_username, user_password, user_type) VALUES(?,?,?,?)";
+        try {
+            PreparedStatement pr = DBConnector.getInstance().prepareStatement(query);
+            pr.setString(1, name);
+            pr.setString(2, uname);
+            pr.setString(3, password);
+            pr.setString(4, type);
+            return pr.executeUpdate() != -1;
+        } catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+        return true;
     }
 }

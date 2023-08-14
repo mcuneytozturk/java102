@@ -1,5 +1,6 @@
 package com.patikadev.helper;
 
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -20,4 +21,6 @@ public class DBConnector {
         DBConnector db = new DBConnector();
         return db.connectDB();
     }
+
+
 }

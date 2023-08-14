@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb809d7e-f9a3-41f7-bdbc-86f22749832f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/OperatorGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/OperatorGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/OperatorGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/OperatorGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/helper/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/helper/DBConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/helper/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/helper/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../patikaKlonu/src/com/patikadev/model/User.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2TzGBQMDQSmks7MZ0vM7T7OxRiu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "onboarding.tips.debug.path": "C:/Users/Cuneyt/Documents/GitHub/java102/UcusYpnetimSistemi/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb809d7e-f9a3-41f7-bdbc-86f22749832f" name="Changes" comment="" />
+      <created>1692038360027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692038360027</updated>
+      <workItem from="1692038361025" duration="176000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net" modified="2023-08-14T19:15:28.775Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="mrPyvIrIrrQ11ZHZxWVq" version="21.6.8" type="device">
+  <diagram name="Sayfa -1" id="4NN_NvW7-rd0A_NCxt7f">
+    <mxGraphModel dx="712" dy="748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-23" value="+List&amp;lt;Movie&amp;gt;: Movie&lt;br&gt;+List&amp;lt;User&amp;gt;: User" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="240" y="90" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-24" value="MovieApp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-25" value="+subscribe()&lt;br&gt;+logIn()&lt;br&gt;+getMovies()&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.438;entryY=1.043;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4RjPW8wFQsp4kWR_0lT3-26" target="4RjPW8wFQsp4kWR_0lT3-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-26" value="Movies" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-27" value="+name: String&lt;br&gt;+category: String&lt;br&gt;+price: int" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-28" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="370" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.594;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4RjPW8wFQsp4kWR_0lT3-29" target="4RjPW8wFQsp4kWR_0lT3-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-29" value="User" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="280" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-30" value="+name: String&lt;br&gt;+password: String&lt;br&gt;+type: Type" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="440" y="310" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-31" value="+changeType(Type)&lt;br&gt;+buyCredit(int)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="440" y="370" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="4RjPW8wFQsp4kWR_0lT3-32" target="4RjPW8wFQsp4kWR_0lT3-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-32" value="Type" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="520" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-33" value="+isSubscriber: boolean&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="280" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4RjPW8wFQsp4kWR_0lT3-34" value="+chooseMovie()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="280" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

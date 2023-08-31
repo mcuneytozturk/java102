@@ -1,6 +1,7 @@
 package com.patikadev.model;
 
 import com.patikadev.helper.DBConnector;
+import com.patikadev.helper.Helper;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -92,16 +93,60 @@ public class User {
     }
     public static boolean add(String name, String uname, String password, String type) {
         String query = "INSERT INTO user_table (user_name, user_username, user_password, user_type) VALUES(?,?,?,?)";
+
+        User findUser = User.getFetch(uname);
+        if (findUser != null){
+            Helper.showMsg("Bu kullanıcı adı daha önce eklenmiş. Yeniden deneyin.");
+            return false;
+        }
         try {
             PreparedStatement pr = DBConnector.getInstance().prepareStatement(query);
             pr.setString(1, name);
             pr.setString(2, uname);
             pr.setString(3, password);
             pr.setString(4, type);
-            return pr.executeUpdate() != -1;
+
+            int response = pr.executeUpdate();
+
+            return response != -1;
         } catch (SQLException e){
             System.out.println(e.getMessage());
         }
         return true;
+    }
+
+    public static User getFetch(String uname){
+        User obj = null;
+        String query = "SELECT * FROM user_table WHERE user_username = ? ";
+        try{
+            PreparedStatement pr = DBConnector.getInstance().prepareStatement(query);
+            pr.setString(1, uname);
+            ResultSet rs = pr.executeQuery();
+            if(rs.next()){
+                obj = new User();
+                obj.setId(rs.getInt("id"));
+                obj.setName(rs.getString("user_name"));
+                obj.setUname(rs.getString("user_username"));
+                obj.setPassword(rs.getString("user_password"));
+                obj.setType(rs.getString("user_type"));
+
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return obj;
+    }
+    public static boolean delete(int id){
+        String query = "DELETE FROM user_table WHERE id = ?";
+        try {
+        PreparedStatement pr = DBConnector.getInstance().prepareStatement(query);
+        pr.setInt(1, id);
+        return pr.executeUpdate() != -1;
+        } catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+        return true;
+
+
     }
 }
